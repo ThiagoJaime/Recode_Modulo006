@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UZxzzQ/4L7UTytqn+ioyfvE7yn3F3c7aqg9tKIO9PDs=",
+  "Source": "api_nasa",
+  "BasePath": "_content/api_nasa",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
