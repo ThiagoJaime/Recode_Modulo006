@@ -9,7 +9,7 @@ export default function Promocao() {
 
   useEffect(() => {
     axios
-      .get("https://localhost:7242/api/Promocoes")
+      .get("http://nasaapi.somee.com/api/promocoes")
       .then((response) => {
         setPromocoes(response.data);
       })

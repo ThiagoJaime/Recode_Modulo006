@@ -10,7 +10,7 @@ export default function Cliente() {
 
   useEffect(() => {
     axios
-      .get("https://localhost:7242/api/Clientes")
+      .get("http://nasaapi.somee.com/api/clientes")
       .then((response) => {
         setClientes(response.data);
       })

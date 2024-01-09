@@ -10,6 +10,7 @@ namespace api_nasa.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        [Column(TypeName = "decimal(10,2)")]
         public double Valor { get; set; }
         [Required]
         public DateTime DataIda { get; set; }

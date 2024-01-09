@@ -11,6 +11,7 @@ namespace api_nasa.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        [Column(TypeName = "decimal(10,2)")]
         public double Preco { get; set; }
         [Required]
         public DateTime Validade { get; set; }

@@ -9,7 +9,7 @@ export default function Cliente() {
 
   useEffect(() => {
     axios
-      .get("https://localhost:7242/api/Reservas")
+      .get("http://nasaapi.somee.com/api/reservas")
       .then((response) => {
         setReservas(response.data);
       })

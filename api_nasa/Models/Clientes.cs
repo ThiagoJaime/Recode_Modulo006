@@ -11,12 +11,16 @@ namespace api_nasa.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        [StringLength(50)]
         public string Nome { get; set; }
         [Required]
+        [StringLength(100)]
         public string Email { get; set; }
         [Required]
+        [StringLength(50)]
         public string Senha { get; set;}
         [Required]
+        [StringLength(15)]
         public string Telefone { get; set; }
 
         [JsonIgnore]
