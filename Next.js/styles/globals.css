@@ -15,6 +15,11 @@
   font-style: normal
 }
 
+.dropdown-menu.show {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -93,6 +98,10 @@ margin: 0;
 color:#222222;
 text-transform: capitalize;
 
+}
+
+.btn {
+  background-color: #00d8ff !important;
 }
 
 .btn-info {
