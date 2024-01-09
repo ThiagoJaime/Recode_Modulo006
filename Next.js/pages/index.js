@@ -11,7 +11,7 @@ const Index = () => {
                   <div className="about-us-txt">
                     <h2>Explore as Belezas do Mundo Agora Mesmo!</h2>
                     <div className="about-btn">
-                      <Link href="destinos.js">
+                      <Link href="/destinos">
                         <button className="btn about-view">Explorar</button>
                       </Link>
                     </div>
