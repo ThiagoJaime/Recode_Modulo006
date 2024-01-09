@@ -6,15 +6,18 @@ import Drop from "../../components/Drop";
 export default function Cliente() {
   
   const [reservas, setReservas] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get("https://nasaapi.somee.com/api/reservas")
       .then((response) => {
         setReservas(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Erro ao buscar a lista de clientes:", error);
+        setLoading(false);
       });
   }, []);
 
@@ -31,6 +34,8 @@ export default function Cliente() {
                   <h4>Reservas</h4>
                 </div>
                 <div className="card-body">
+                  { loading ? 
+                  <p>Carregando...</p> :
                   <div className="table-responsive">
                     <table className="table table-hover table-borderless">
                       <thead>
@@ -59,6 +64,7 @@ export default function Cliente() {
                       </tbody>
                     </table>
                   </div>
+                  }
                 </div>
               </div>
             </div>

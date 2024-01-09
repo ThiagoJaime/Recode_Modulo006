@@ -6,15 +6,18 @@ import Drop from "../../components/Drop";
 export default function Promocao() {
   
   const [promocoes, setPromocoes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get("https://nasaapi.somee.com/api/promocoes")
       .then((response) => {
         setPromocoes(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Erro ao buscar a lista de promos:", error);
+        setLoading(false);
       });
   }, []);
 
@@ -31,6 +34,8 @@ export default function Promocao() {
                   <h4>Promoção</h4>
                 </div>
                 <div className="card-body">
+                  { loading ? 
+                  <p>Carregando...</p> : 
                   <div className="table-responsive">
                     <table className="table table-hover table-borderless">
                       <thead>
@@ -51,6 +56,7 @@ export default function Promocao() {
                       </tbody>
                     </table>
                   </div>
+                  }
                 </div>
               </div>
             </div>

@@ -6,15 +6,18 @@ import { useEffect, useState } from "react";
 export default function Destino() {
   
   const [destino, setDestino] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get("https://nasaapi.somee.com/api/destinos")
       .then((response) => {
         setDestino(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Erro ao buscar a lista de destinos:", error);
+        setLoading(false);
       });
   }, []);
 
@@ -31,6 +34,8 @@ export default function Destino() {
                   <h4>Destinos</h4>
                 </div>
                 <div className="card-body">
+                  { loading ? 
+                  <p>Carregando...</p> : 
                   <div className="table-responsive">
                     <table className="table table-hover table-borderless">
                       <thead>
@@ -53,6 +58,7 @@ export default function Destino() {
                       </tbody>
                     </table>
                   </div>
+                  } 
                 </div>
               </div>
             </div>
