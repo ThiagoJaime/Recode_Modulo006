@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+  src: url('/Font/fontawesome-webfont.ttf');
   font-weight: normal;
   font-style: normal
 }
