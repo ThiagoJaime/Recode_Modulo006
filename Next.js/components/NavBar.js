@@ -17,7 +17,7 @@ const Navbar = () => {
             <img
               src="/IMGs/home/logo.webp"
               style={{ width: 400, height: 70 }}
-              className="rounded-pill"
+              className="rounded-pill img-thumbmail"
             />
           </span >
         </Link>

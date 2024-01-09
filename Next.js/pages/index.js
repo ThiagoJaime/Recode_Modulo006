@@ -1,3 +1,4 @@
+import Link from "next/link";
 const Index = () => {
   return (
     <>
@@ -10,9 +11,9 @@ const Index = () => {
                   <div className="about-us-txt">
                     <h2>Explore as Belezas do Mundo Agora Mesmo!</h2>
                     <div className="about-btn">
-                      <a href="login.html">
+                      <Link href="destinos.js">
                         <button className="btn about-view">Explorar</button>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
