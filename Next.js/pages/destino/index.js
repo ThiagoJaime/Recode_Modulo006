@@ -9,7 +9,7 @@ export default function Destino() {
 
   useEffect(() => {
     axios
-      .get("http://nasaapi.somee.com/api/destinos")
+      .get("https://nasaapi.somee.com/api/destinos")
       .then((response) => {
         setDestino(response.data);
       })
