@@ -43,6 +43,7 @@ export default function Cliente() {
                           <th>ID</th>
                           <th>Nome</th>
                           <th>E-mail</th>
+                          <th>Telefone</th>
                           <th>Senha</th>
                         </tr>
                       </thead>
@@ -52,6 +53,7 @@ export default function Cliente() {
                             <td>{cliente.id}</td>
                             <td>{cliente.nome}</td>
                             <td>{cliente.email}</td>
+                            <td>{cliente.telefone}</td>
                             <td>*******</td>
                           </tr>
                         ))}
