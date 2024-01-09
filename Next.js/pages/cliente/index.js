@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import Drop from "../../components/Drop";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Cliente() {
