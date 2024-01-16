@@ -12,7 +12,7 @@ Projeto fullstack de um agência de viajens com web API em C#, Banco de dados Sq
 
 Há 2 maneiras que você pode fazer para utilizar a aplicação:
 
-**1ª** - Entrando na página com o sistema inteiro deployado
+**1ª** - Entrando na página com o sistema inteiramente implantado 
 (https://apiairline.vercel.app/)
 
 **2ª** - Rodando a aplicação localmente.
