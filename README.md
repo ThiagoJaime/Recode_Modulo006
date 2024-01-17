@@ -2,7 +2,7 @@
 Projeto fullstack de um agência de viajens com web API em C#, Banco de dados Sql server e o front em Next.js, Todos Hospedados. 
 
 # Tecnologias Usadas
-- Java
+- JavaScript
 - NextJS
 - .NET
 - C#
